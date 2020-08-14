@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/useroptions.js"></script>
+<body class="w3-light-grey w3-content" style="max-width: 1600px">
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left"
+		style="z-index: 3; width: 300px; position: fixed; top: 0;"
+		id="mySidebar">
+		<br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()"
+				class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+				title="close menu"> <i class="fa fa-remove"></i>
+			</a>
+			<div class="w3-card w3-round w3-white">
+				<div class="w3-container">
+					<div class="w3-cell-row">
+						<div class="w3-cell w3-left">
+							<h4 class="w3-center w3-left">My Profile</h4>
+						</div>
+						<div class="w3-cell w3-right">
+							<i class="fa fa-sign-out w3-large w3-text-teal w3-button"
+								style="margin-top: 8px;"></i>
+						</div>
+					</div>
+					<p class="w3-center">
+						<img src="images/WIN_20190531_21_03_03_Pro.jpg" class="w3-circle"
+							style="height: 106px; width: 106px" alt="Avatar">
+					</p>
+					<hr>
+					<p>
+						<i class="fa fa-id-badge fa-fw w3-margin-right w3-text-theme"></i>U10001
+					</p>
+					<p>
+						<i class="fa fa-user fa-fw w3-margin-right w3-text-theme"></i>Rajshekhar
+						Sahu
+					</p>
+				</div>
+			</div>
+			<h4>
+				<b>Admin Options</b>
+			</h4>
+		</div>
+		<div class="w3-bar-block">
+			<a href="#portfolio"
+				class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+				class="fa fa fa-user-circle fa-fw w3-margin-right"></i>USERS</a> <a
+				href="#about" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+				class="fa fa-users fa-fw w3-margin-right"></i>CANDIDATES</a>
+			<div class="w3-dropdown-hover">
+				<span class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+					class="fa fa-handshake-o fa-fw w3-margin-right"></i>ELECTIONS</span>
+				<div class="w3-dropdown-content w3-card-4  w3-animate-zoom">
+					<a href="#" class="w3-bar-item w3-button w3-text-teal">Manage
+						Election</a> <a href="#" class="w3-bar-item w3-button w3-text-teal">Start
+						Election</a>
+				</div>
+			</div>
+			<a href="#contact"
+				class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+				class="fa fa fa-line-chart fa-fw w3-margin-right"></i>RESULTS</a> <a
+				href="#contact"
+				class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+				class="fa fa-key fa-fw w3-margin-right"></i>CHANGE PASSWORD</a>
+		</div>
+	</nav>
+	<div class="w3-overlay w3-hide-large w3-animate-opacity"
+		onclick="w3_close()" style="cursor: pointer" title="close side menu"
+		id="myOverlay"></div>
+	<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"
+		onclick="w3_open()"><i class="fa fa-bars"></i></span>
+	<div class="w3-main" style="margin-left: 300px;">
+		
+	</div>
+	<script>
+		function w3_open() {
+			document.getElementById("mySidebar").style.display = "block";
+			document.getElementById("myOverlay").style.display = "block";
+		}
+
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+			document.getElementById("myOverlay").style.display = "none";
+		}
+	</script>
+</body>
+</html>
